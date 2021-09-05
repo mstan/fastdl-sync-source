@@ -34,6 +34,8 @@ async function checkForNewFiles() {
 	
 	if(customGameServerMapsToAdd.length > 0) {
 		debug(customGameServerMapsToAdd);	
+	} else {
+		debug(`No new maps found. Breaking sequence...`);
 	}
 
 	for(let map of customGameServerMapsToAdd) {
@@ -46,7 +48,7 @@ async function checkForNewFiles() {
 	await client.close();
 }
 
-checkForNewFiles();
+module.exports = checkForNewFiles;
 
 
 
