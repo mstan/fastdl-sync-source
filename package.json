@@ -1,0 +1,17 @@
+{
+  "name": "fastdl-sync",
+  "version": "0.0.1",
+  "description": "Ensures directories are up to date with folders on a game server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Stanley",
+  "license": "ISC",
+  "dependencies": {
+    "basic-ftp": "^4.6.6",
+    "debug": "^4.3.2",
+    "dotenv": "^10.0.0",
+    "fs": "0.0.1-security"
+  }
+}
