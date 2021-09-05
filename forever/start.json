@@ -1,7 +1,0 @@
-{
-  "uid": "fastdl-sync",
-  "append": true,
-  "watch": true,
-  "script": "scheduler.js",
-  "sourceDir": "/var/www/fastdl-sync"
-}
