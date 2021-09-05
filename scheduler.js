@@ -4,6 +4,7 @@ const app = require('./app');
 
 
 const scheduler = function() {
+	debug('Initializing scheduler...');
 	return setInterval(async () => {
 		debug(`Running scheduler check....`);
 		await app();
