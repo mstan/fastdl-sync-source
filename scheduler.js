@@ -4,10 +4,12 @@ const app = require('./app');
 
 
 const scheduler = function() {
-	return setInterval(() => {
+	return setInterval(async () => {
 		debug(`Running scheduler check....`);
 		await app();
 	}, process.env.CHECK_INTERVAL_MINUTES * 60 * 1000)
 }
+
+
 
 scheduler();
