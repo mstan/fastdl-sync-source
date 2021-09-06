@@ -13,14 +13,7 @@ const {
 } = process.env;
 
 
-async function checkForNewFiles() {
-	// connect to the server
-	await client.access({
-		host: process.env.REMOTE_GAME_SERVER_IP,
-		user: process.env.REMOTE_GAME_SERVER_FTP_USERNAME,
-		password: process.env.REMOTE_GAME_SERVER_FTP_PASSWORD
-	});
-
+async function checkForNewMaps() {
 	// get a list of all files in each directory
 	let remoteGameServerMaps = await client.list(`${REMOTE_GAME_SERVER_FILE_PATH}/maps`);
 	// filter to just the filenames and not the whole file. 
@@ -42,7 +35,25 @@ async function checkForNewFiles() {
 		debug(`Starting download of ${map}`);
 
 		await client.downloadTo(`${LOCAL_SERVER_FILE_PATH}/maps/${map}`, `${REMOTE_GAME_SERVER_FILE_PATH}/maps/${map}`, );
+	}
 
+	return;
+}
+
+
+async function checkForNewFiles() {
+	// connect to the server
+	await client.access({
+		host: process.env.REMOTE_GAME_SERVER_IP,
+		user: process.env.REMOTE_GAME_SERVER_FTP_USERNAME,
+		password: process.env.REMOTE_GAME_SERVER_FTP_PASSWORD
+	});
+
+
+	try {
+		await checkForNewMaps();		
+	} catch(error) {
+		debug(error);
 	}
 
 	return await client.close();

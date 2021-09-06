@@ -7,10 +7,13 @@ const scheduler = function() {
 	debug('Initializing scheduler...');
 	return setInterval(async () => {
 		debug(`Running scheduler check....`);
-		await app();
+
+		try {
+			await app(); 
+		} catch(error) {
+			debug(error);
+		}
 	}, process.env.CHECK_INTERVAL_MINUTES * 60 * 1000)
 }
-
-
 
 scheduler();
