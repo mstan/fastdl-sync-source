@@ -34,7 +34,7 @@ async function checkForNewMaps() {
 	for(let map of customGameServerMapsToAdd) {
 		debug(`Starting download of ${map}`);
 
-		await client.downloadTo(`${LOCAL_SERVER_FILE_PATH}/maps/${map}`, `${REMOTE_GAME_SERVER_FILE_PATH}/maps/${map}`, );
+		await client.downloadTo(`${LOCAL_SERVER_FILE_PATH}/maps/${map}`, `${REMOTE_GAME_SERVER_FILE_PATH}/maps/${map}`);
 	}
 
 	return;
@@ -56,7 +56,7 @@ async function checkForNewFiles() {
 		debug(error);
 	}
 
-	return client.close();
+	return await client.close();
 }
 
 module.exports = checkForNewFiles;
