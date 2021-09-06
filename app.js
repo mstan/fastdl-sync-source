@@ -56,7 +56,7 @@ async function checkForNewFiles() {
 		debug(error);
 	}
 
-	return await client.close();
+	return client.close();
 }
 
 module.exports = checkForNewFiles;
