@@ -16,20 +16,20 @@ This service aims to be particularly useful for hosted game services like GameSe
 Configure the .env as follows
 
 Update the config file with the following: 
-REMOTE_GAME_SERVER_FILE_PATH (this is the base path of your Source game (e.g. orangebox/tf)
-LOCAL_SERVER_FILE_PATH= (this is the base path of your fastdl server files)
-REMOTE_GAME_SERVER_IP (this is the IP of your game server)
-REMOTE_GAME_SERVER_FTP_USERNAME (this is your game server's FTP user)
-REMOTE_GAME_SERVER_FTP_PASSWORD (this is your game server's FTP password)
-CHECK_INTERVAL_MINUTES (how often the server should check for new files in minutes)
+REMOTE_GAME_SERVER_FILE_PATH (this is the base path of your Source game (e.g. orangebox/tf)  
+LOCAL_SERVER_FILE_PATH= (this is the base path of your fastdl server files)  
+REMOTE_GAME_SERVER_IP (this is the IP of your game server)  
+REMOTE_GAME_SERVER_FTP_USERNAME (this is your game server's FTP user)  
+REMOTE_GAME_SERVER_FTP_PASSWORD (this is your game server's FTP password)  
+CHECK_INTERVAL_MINUTES (how often the server should check for new files in minutes)  
 
-Example config file:
-REMOTE_GAME_SERVER_FILE_PATH=/orangebox/tf
-LOCAL_SERVER_FILE_PATH=./
-REMOTE_GAME_SERVER_IP=192.168.0.1
-REMOTE_GAME_SERVER_FTP_USERNAME=username
-REMOTE_GAME_SERVER_FTP_PASSWORD=password
-CHECK_INTERVAL_MINUTES=1
+Example config file:  
+REMOTE_GAME_SERVER_FILE_PATH=/orangebox/tf  
+LOCAL_SERVER_FILE_PATH=./  
+REMOTE_GAME_SERVER_IP=192.168.0.1  
+REMOTE_GAME_SERVER_FTP_USERNAME=username  
+REMOTE_GAME_SERVER_FTP_PASSWORD=password  
+CHECK_INTERVAL_MINUTES=1  
 	
 	
 ## Setup
