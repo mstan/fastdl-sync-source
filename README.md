@@ -2,7 +2,7 @@
 
 ## what does this do?
 
-This app is meant to allow for automatic syncing of downloadable content from a source engine based game to it's fastdl server.  
+This app is meant to allow for automatic syncing of downloadable content from a source engine based game to its fastdl server.  
   
 This service aims to be particularly useful for hosted game services like GameServers by not requiring SSH access to the game server itself.
 
