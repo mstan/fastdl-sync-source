@@ -40,5 +40,8 @@ CHECK_INTERVAL_MINUTES=1
 - Run scheduler.js on a service like [forever](https://github.com/foreversd/forever)
 
 
+## Support
+
+If you like my work, consider checking out my [Patreon](https://www.patreon.com/gamemaster1379?fan_landing=true)
 
 

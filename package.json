@@ -1,7 +1,7 @@
 {
   "name": "fastdl-sync",
-  "version": "0.0.1",
-  "description": "Ensures directories are up to date with folders on a game server",
+  "version": "0.1.0",
+  "description": "Ensures fastDL directories are up to date with folders on a game server",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
